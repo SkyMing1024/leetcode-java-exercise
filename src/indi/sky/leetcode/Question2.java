@@ -34,8 +34,7 @@ public class Question2 {
             curryNode.next = new ListNode(getEachBitInt(a,i));
             curryNode = curryNode.next;
         }
-        System.out.println("sumInt:"+getListNodeValue(curryNode));
-        return curryNode;
+        return head;
     }
 
     /**
