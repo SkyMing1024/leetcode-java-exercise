@@ -15,7 +15,7 @@ public class Question3 {
     public int lengthOfLongestSubstring(String s) {
         int res = 0;
         for (int i = 0; i < s.length(); i++) {
-            for (int j = i+1; j < s.length(); j++) {
+            for (int j = i+1; j <= s.length(); j++) {
                 String subStr = s.substring(i,j);
                 if (ifCharUnique(s,i,j)){
                     res = Math.max(res,j-i);
@@ -40,7 +40,7 @@ public class Question3 {
 
     public static void main(String[] args){
         Question3 quertion = new Question3();
-        int res = quertion.lengthOfLongestSubstring("aaaaa");
+        int res = quertion.lengthOfLongestSubstring("");
         System.out.println("res:"+res);
     }
 
