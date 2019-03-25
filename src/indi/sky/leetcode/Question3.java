@@ -12,6 +12,13 @@ import java.util.Set;
  * 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
  */
 public class Question3 {
+
+    /**
+     * 暴力破解:
+     * 求出所有子串(两次循环),判断子串是否有重复字符(一次循环)
+     * 缺点:
+     * 时间复杂度太高O(n^3)
+     */
     public int lengthOfLongestSubstring(String s) {
         int res = 0;
         for (int i = 0; i < s.length(); i++) {
@@ -40,9 +47,7 @@ public class Question3 {
 
     public static void main(String[] args){
         Question3 quertion = new Question3();
-        int res = quertion.lengthOfLongestSubstring("");
+        int res = quertion.lengthOfLongestSubstring(" ");
         System.out.println("res:"+res);
     }
-
-
 }
