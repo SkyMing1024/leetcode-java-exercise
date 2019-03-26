@@ -58,8 +58,6 @@ public class Sort {
                 arr[x] = temp;
             }
         }
-
-
     }
 
     public void printArray(int[] arr){
