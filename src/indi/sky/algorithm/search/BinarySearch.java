@@ -4,8 +4,7 @@ import indi.sky.algorithm.sort.BubbleSort;
 import indi.sky.leetcode.Question5;
 
 /**
- * Author : ming.tian
- * Date : 14:20 2019/3/26
+ * 时间复杂度O(logn) 非常优秀的时间复杂度
  */
 public class BinarySearch {
     public int binarySearch(int[] nums, int target){
@@ -31,15 +30,21 @@ public class BinarySearch {
     }
     /**
      * Description : 非递归
+     * 三点注意:
      */
     public int search(int[] nums,int target){
         int index = -1;
         int n = nums.length;
         int left = 0, right = n-1;
         int half = 0;
+        // 1.循环退出条件是left<=right,而非left<right
         while (left<=right){
+            // 2.half的取值有问题, 如果left和right较大,二者之和可能会溢出.
+            //   改进为left+(right-left)/2,
+            //   更进一步,可将除以2的操作转化为位运算 left+((right-left)>>1)
             half = (left+right)/2;
             if (nums[half] > target){
+                // 3. 注意区间取值 +1 -1
                 right = half-1;
             }else if(nums[half] < target){
                 left = half+1;
