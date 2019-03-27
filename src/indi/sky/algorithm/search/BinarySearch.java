@@ -32,7 +32,7 @@ public class BinarySearch {
      * Description : 非递归
      * 三点注意:
      */
-    public int search(int[] nums,int target){
+    public int normalBinarysearch(int[] nums,int target){
         int index = -1;
         int n = nums.length;
         int left = 0, right = n-1;
@@ -60,7 +60,7 @@ public class BinarySearch {
         int[] arr = {2,4,5,6,8,13,67,76,76,88,98};
         int target = 13;
         int res1 = b.binarySearch(arr,target);
-        int res2 = b.search(arr,target);
+        int res2 = b.normalBinarysearch(arr,target);
         System.out.println(" 递归:"+target+"的下标是:"+res1);
         System.out.println("非递归:"+target+"的下标是:"+res2);
     }
