@@ -26,7 +26,7 @@ public class Question12 {
 
     public static void main(String[] args){
         Question12 question = new Question12();
-        String res = question.intToRoman0(3);
+        String res = question.intToRoman0(83);
         System.out.println("res:"+res);
     }
 }
