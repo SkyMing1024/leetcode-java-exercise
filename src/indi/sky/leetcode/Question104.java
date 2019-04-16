@@ -12,6 +12,10 @@ public class Question104 {
      * Description :
      * 方法一
      *  递归 深度优先遍历
+     *  时间复杂度: 每个节点访问一次 T(n) = O(n)
+     *  空间复杂度:
+     *      最坏情况, 完全不平衡二叉树,递归会被调用n次, O(n)
+     *      最好情况, 平衡二叉树, O(log(n))
      */
     public int maxDepth(TreeNode root) {
         int depth = 0;
