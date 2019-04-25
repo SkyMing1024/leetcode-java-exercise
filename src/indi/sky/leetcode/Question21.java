@@ -4,6 +4,9 @@ import indi.sky.dataStructure.ListNode;
 
 /**
  * 21. 合并两个有序链表
+ * 递归:
+ * 1.如果有链表为空, 则直接返回另一个链表
+ * 2.取两个链表头结点较小者(定义为res)作为新节点的头结点,并将res的后继节点和另一链表头结点作递归
  */
 public class Question21 {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
@@ -24,10 +27,10 @@ public class Question21 {
     public static void main (String[] args){
         ListNode ln1 = new ListNode(2);
         ln1.next = new ListNode(3);
-//        ln1.next.next = new ListNode(5);
+        ln1.next.next = new ListNode(5);
         ListNode ln2 = new ListNode(1);
         ln2.next = new ListNode(4);
-//        ln2.next.next = new ListNode(6);
+        ln2.next.next = new ListNode(6);
 
         ln1.print();
         ln2.print();
