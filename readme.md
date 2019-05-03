@@ -26,3 +26,5 @@
 #### 堆
 * [347. 前K个高频元素](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question347.java)
 
+#### 位运算
+* [136. 只出现一次的数字](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question136.java)
