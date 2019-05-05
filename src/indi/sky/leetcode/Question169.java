@@ -4,6 +4,9 @@ import java.util.HashMap;
 
 /**
  * 169. 求众数
+ * 题目中将众数定义为出现次数大于n/2的数
+ * 此解法可以求任意数组中出现次数最多的数(即广义上的众数)
+ * 针对此题目要求还有优化空间
  */
 public class Question169 {
     public int majorityElement(int[] nums) {
