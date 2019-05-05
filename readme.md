@@ -28,3 +28,8 @@
 
 #### 位运算
 * [136. 只出现一次的数字](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question136.java)
+
+#### 其他
+
+* [169. 求众数](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question169.java)
+* [229. 求众数 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question229.java)
