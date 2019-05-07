@@ -7,6 +7,7 @@
 
 #### 数组
 * [33.搜索旋转排序数组](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question33.java)
+* [26. 删除排序数组中的重复项](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question26&#0;.java)
 
 * [81.搜索旋转排序数组 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question81.java)
 
