@@ -12,7 +12,7 @@ public class Question450 {
      * Description : 删除二叉搜索树中的指定节点
      * @param root 目标二叉树的根节点
      * @param key  要删除的数据
-     * 扩展: 二叉搜索树: 左子树 < 节点 < you子树
+     * 扩展: 二叉搜索树: 左子树 < 节点 < 右子树
      *
      */
     public TreeNode deleteNode(TreeNode root, int key) {
