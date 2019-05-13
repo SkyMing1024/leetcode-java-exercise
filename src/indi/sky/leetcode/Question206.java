@@ -11,6 +11,8 @@ public class Question206 {
      * 迭代解法:
      * 1. 将当前节点node的下一节点指向node的前置节点
      * 2. 将node的前置节点指向node, 将node指向node的下一节点, 即将前置节点和当前节点后移一位
+     * 时间复杂度: O(n)
+     * 空间复杂度: O(1)
      */
     public ListNode reverseListByIterator(ListNode head) {
         ListNode res = null;
@@ -23,6 +25,22 @@ public class Question206 {
             node = temp;
         }
         return res;
+    }
+
+    /**
+     * Description :
+     * 递归解法, 参考题解
+     * 时间复杂度: O(n)
+     * 空间复杂度: O(n)
+     */
+    public ListNode reverseListByRecursion(ListNode head){
+        if (head == null || head.next == null){
+            return head;
+        }
+        ListNode p = reverseListByRecursion(head.next);
+        head.next.next = head;
+        head.next = null;
+        return p;
     }
 
     public static void main(String[] args){
