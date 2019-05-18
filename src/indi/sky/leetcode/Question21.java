@@ -7,6 +7,8 @@ import indi.sky.dataStructure.ListNode;
  * 递归:
  * 1.如果有链表为空, 则直接返回另一个链表
  * 2.取两个链表头结点较小者(定义为res)作为新节点的头结点,并将res的后继节点和另一链表头结点作递归
+ * 时间复杂度: O(n)
+ * 空间复杂度: O(n)
  * 相关问题 Q23 合并K个排序链表
  * https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question23.java
  */
@@ -27,7 +29,7 @@ public class Question21 {
     }
 
     public static void main (String[] args){
-        ListNode ln1 = new ListNode(2);
+        ListNode ln1 = new ListNode(-1);
         ln1.next = new ListNode(3);
         ln1.next.next = new ListNode(5);
         ListNode ln2 = new ListNode(1);
