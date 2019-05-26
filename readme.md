@@ -30,6 +30,9 @@
 #### 位运算
 * [136. 只出现一次的数字](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question136.java)
 
+#### 动态规划
+* [53. 最大子序和](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question53.java)
+
 #### 其他
 
 * [70. 爬楼梯问题](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)
