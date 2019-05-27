@@ -32,6 +32,9 @@
 
 #### 动态规划
 * [53. 最大子序和](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question53.java)
+* [62. 不同路径](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question62.java)
+* [63. 不同路径 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question63.java)
+* [64. 最小路径和](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question62.java)
 
 #### 其他
 
