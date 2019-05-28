@@ -18,6 +18,12 @@ public class Question62 {
         return uniquePaths1(m - 1, n) + uniquePaths1(m, n - 1);
     }
 
+    /**
+     * 动态规划：
+     * 核心思想： dp[i][j] = dp[i-1][j]+dp[i][j-1];
+     * 与递归法的区别：构造一个二维数组存储每个状态的结果，而不是像递归那样一层层递归下去。
+     * 易错点：边界点需要单独处理，边界上值全部为1
+     */
     public int uniquePaths2(int m, int n) {
         int[][] dp = new int[m][n];
         dp[0][0] = 1;
