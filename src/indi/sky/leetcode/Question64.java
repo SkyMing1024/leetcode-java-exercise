@@ -4,6 +4,11 @@ package indi.sky.leetcode;
  * 64. 最小路径和
  */
 public class Question64 {
+    /**
+     * 动态规划
+     * 核心思想： dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1]) + grid[i][j]
+     * 易错点:边界上，即 i==0 或 j==0 时需要单独处理
+     */
     public int minPathSum(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
