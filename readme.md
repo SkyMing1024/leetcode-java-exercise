@@ -30,6 +30,14 @@
 #### 位运算
 * [136. 只出现一次的数字](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question136.java)
 
+#### 回溯算法
+- [ ] [39.组合总和](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)  
+- [ ] [40. 组合总和 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)
+- [ ] [46. 全排列](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)
+- [ ] [47. 全排列 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)
+- [ ] [78. 子集](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)
+- [ ] [90. 子集 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)
+
 #### 动态规划
 * [53. 最大子序和](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question53.java)
 * [62. 不同路径](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question62.java)
