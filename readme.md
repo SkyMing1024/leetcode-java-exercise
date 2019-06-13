@@ -38,6 +38,7 @@
 - [ ] [40. 组合总和 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)
 - [X] [46. 全排列](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)
 - [ ] [47. 全排列 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)
+- [ ] [51. N皇后](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question51.java)
 - [ ] [78. 子集](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)
 - [ ] [90. 子集 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question70.java)
 
