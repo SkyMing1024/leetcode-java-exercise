@@ -8,7 +8,7 @@
 * [26. 删除排序数组中的重复项](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question26&#0;.java)
 * [33.搜索旋转排序数组](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question33.java)
 - [X] [54. 螺旋矩阵](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question54.java)
-- [ ] [59. 螺旋矩阵 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question59.java)
+- [X] [59. 螺旋矩阵 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question59.java)
 * [81.搜索旋转排序数组 II](https://github.com/SkyMing1024/leetcode-java-execise/blob/master/src/indi/sky/leetcode/Question81.java)
 
 #### 链表
