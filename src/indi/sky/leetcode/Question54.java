@@ -22,9 +22,11 @@ public class Question54 {
             if (height == 0 || weight == 0){break;}
             for (int r = startRow; r < startRow+height ; r++) {result.add(matrix[r][startCol+weight-1]);}
             weight--;
+            // 下边界
             if (height == 0 || weight == 0){break;}
             for (int c = startCol+weight-1; c >= startCol ; c--) {result.add(matrix[startRow+height-1][c]);}
             height--;
+            // 左边界
             for (int r = startRow + height-1; r >= startRow ; r--) {result.add(matrix[r][startCol]);}
             weight--;
             startCol++;
