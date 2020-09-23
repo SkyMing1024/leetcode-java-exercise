@@ -22,6 +22,9 @@ public class Question19 {
     }
 
     public ListNode remove(ListNode l, int index){
+        if (index == 1){
+            return l.next;
+        }
         ListNode res = l;
         int count = 0;
         while (l!=null){
@@ -39,11 +42,12 @@ public class Question19 {
 
     public static void main (String[] args){
         ListNode ln1 = new ListNode(2);
-        ln1.next = new ListNode(3);
-        ln1.next.next = new ListNode(6);
-        ln1.next.next.next = new ListNode(4);
+//        ln1.next = new ListNode(3);
+//        ln1.next.next = new ListNode(6);
+//        ln1.next.next.next = new ListNode(4);
         Question19 q = new Question19();
-        ListNode res = q.removeNthFromEnd(ln1,3);
-
+        ln1.print();
+        ListNode res = q.removeNthFromEnd(ln1,1);
+        res.print();
     }
 }

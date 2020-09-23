@@ -4,8 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Author : ming.tian
- * Date : 18:22 2019/3/14
  */
 public class Question1 {
     /**

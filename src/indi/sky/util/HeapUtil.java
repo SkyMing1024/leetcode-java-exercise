@@ -1,4 +1,4 @@
-package indi.sky.dataStructure;
+package indi.sky.util;
 
 /**
  */

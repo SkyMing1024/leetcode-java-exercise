@@ -43,7 +43,7 @@ public class Question70 {
         Question70 q = new Question70();
         //获取开始时间
         long startTime=System.currentTimeMillis();
-        int res = q.climbStairs(100);
+        int res = q.climbStairsByDp(50);
         //获取结束时间
         long endTime=System.currentTimeMillis();
         System.out.println("程序运行时间： "+(endTime-startTime)+"ms");

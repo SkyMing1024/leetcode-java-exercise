@@ -51,11 +51,9 @@ public class Question5 {
 
     public static void main(String[] args){
         Question5 quertion = new Question5();
-        String s = "";
+        String s = "abcdcba";
 //        boolean res = quertion.isPalinromel(s,0,s.length()-1);
         String longestStr = quertion.longestPalindrome1(s);
         System.out.println("res:"+longestStr);
     }
-
-
 }

@@ -1,5 +1,7 @@
 package indi.sky.dataStructure;
 
+import java.util.LinkedList;
+
 public class ListNode {
     public int val;
     public ListNode next;
@@ -11,7 +13,7 @@ public class ListNode {
     /**
      * Description : 删除第n个元素 n=1 . 2 . 3......
      */
-    public void remov(int index){
+    public void remove(int index){
         ListNode res = this;
         int count = 0;
         while (res!=null){
@@ -33,10 +35,11 @@ public class ListNode {
         StringBuilder res = new StringBuilder();
         while (tmp!=null){
             res.append(tmp.val);
-            res.append("->");
+            if (tmp.next!=null){
+                res.append(" -> ");
+            }
             tmp = tmp.next;
         }
-        res.append("null");
         System.out.println(res);
     }
 }

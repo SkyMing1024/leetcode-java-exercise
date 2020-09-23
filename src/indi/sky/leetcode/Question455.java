@@ -8,6 +8,8 @@ import java.util.Arrays;
  * 每次都尽量用小的饼干来满足胃口小的孩子
  */
 public class Question455 {
+    // g 代表孩子
+    // s 代表饼干
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);
@@ -20,9 +22,10 @@ public class Question455 {
                 }
             }
         }
+
         return k;
     }
-    
+
     public static void main(String[] args){
         Question455 q = new Question455();
         int[] child = {1,2,3};
