@@ -1,5 +1,10 @@
 package indi.sky.algorithm.sort;
 
+import java.util.Arrays;
+
+/**
+ * 冒泡排序
+ */
 public class BubbleSort {
     public void bubbleSort(int[] arr, int n){
         for (int i = 0; i < n ; i++) {

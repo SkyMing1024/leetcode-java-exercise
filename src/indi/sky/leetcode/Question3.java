@@ -1,6 +1,8 @@
 package indi.sky.leetcode;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -45,9 +47,44 @@ public class Question3 {
         return true;
     }
 
+    public int lengthOfLongestSubstring2(String s) {
+        int[] m = new int[128];
+        int len = 0;
+        for(int i = 0, j = 0; j < s.length(); j++){
+            i = Math.max(m[s.charAt(j)], i);
+            len = Math.max(len, j - i + 1);
+            m[s.charAt(j)] = j + 1;
+        }
+        return len;
+    }
+
+
+    /**
+     * 滑动窗口
+     *
+     */
+    public int lengthOfLongestSubstring3(String s) {
+        if (s.length() == 0){
+            return 0;
+        }
+        int max = 0;
+        int i = 0,j = 0;
+        Map<Character, Integer> map = new HashMap<>();
+        for (; j < s.length(); j++) {
+            char temp = s.charAt(j);
+            if (map.containsKey(temp)){
+                i = Math.max(i,map.get(temp)+1);
+            }
+            map.put(s.charAt(j),j);
+            max = Math.max(max,j-i+1);
+        }
+        return max;
+    }
+
     public static void main(String[] args){
         Question3 quertion = new Question3();
-        int res = quertion.lengthOfLongestSubstring(" ");
+
+        int res = quertion.lengthOfLongestSubstring3("aaaaa");
         System.out.println("res:"+res);
     }
 }

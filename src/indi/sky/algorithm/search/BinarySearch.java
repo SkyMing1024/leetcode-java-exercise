@@ -17,7 +17,7 @@ public class BinarySearch {
     /**
      * Description : 递归实现二分查找
      */
-    public int recursionSearch(int[] nums,int start, int end, int target){
+    public static int recursionSearch(int[] nums,int start, int end, int target){
         int half = (start+end)/2;
         if (nums[half] > target){
             return recursionSearch(nums,start,half,target);
@@ -32,7 +32,7 @@ public class BinarySearch {
      * Description : 非递归
      * 三点注意:
      */
-    public int normalBinarysearch(int[] nums,int target){
+    public static int normalBinarysearch(int[] nums,int target){
         int index = -1;
         int n = nums.length;
         int left = 0, right = n-1;

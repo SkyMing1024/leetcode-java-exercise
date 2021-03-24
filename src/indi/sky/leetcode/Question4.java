@@ -34,6 +34,7 @@ public class Question4 {
      * 两个数组存新数组, 再排序, 再取中位数
      * 缺点明显:
      * 时间空间复杂度太大
+     * 时间复杂度：O((m+n)^2)
      */
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         double median = 0;
@@ -47,8 +48,7 @@ public class Question4 {
                 arr[i] = nums2[i-m];
             }
         }
-        Sort sort = new Sort();
-        sort.bubbleSort(arr,arr.length);
+        Sort.bubbleSort(arr,arr.length);
         if (arr.length%2 == 0){
             median = (arr[arr.length/2] + arr[arr.length/2-1])/2.0;
         }else {
@@ -59,8 +59,8 @@ public class Question4 {
 
     public static void main(String[] args){
         Question4 quertion = new Question4();
-        int[] nums1 = {1,3};
-        int[] nums2 = {2,4};
+        int[] nums1 = {1,3,4};
+        int[] nums2 = {2,5,9};
         double res = quertion.findMedianSortedArrays(nums1,nums2);
         System.out.println("中位数:"+res);
     }

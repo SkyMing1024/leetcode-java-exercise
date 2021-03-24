@@ -24,6 +24,12 @@ public class Question2 {
      * 1.将链表代表的数用转成int型
      * 2.int型数相加
      * 3.将int结果用链表表示
+     *
+     * 复杂度：O(m+n)
+     *
+     * 此方法致命问题：
+     * 将链表转化为int整数时，会超出int的表示范围。
+     * int占4个字节，表示范围为[-2^32,2^31],链表表示的数字可能会超出此范围，这时，此方法彻底失效。
      */
     public ListNode addTwoNumbers1(ListNode l1, ListNode l2) {
         int a = this.getListNodeValue(l1) + this.getListNodeValue(l2);
@@ -41,17 +47,37 @@ public class Question2 {
      * Description :
      * 方法2
      * 循环链表,带进位运算
+     * 时间复杂度：O(max(m,n))
+     * 空间复杂度：O(mac(m,n))
      */
     public ListNode addTwoNumbers2(ListNode l1, ListNode l2){
-
-        return l1;
+        ListNode head = null,tail = null;
+        int n1,n2,sum,carry=0;
+        while (l1!=null || l2!=null){
+            n1 = l1 != null ? l1.val : 0;
+            n2 = l2 != null ? l2.val : 0;
+            sum = n1 + n2 + carry;
+            if (head == null){
+                head = tail = new ListNode(sum%10);
+            }else {
+                tail.next = new ListNode(sum%10);
+                tail = tail.next;
+            }
+            carry = sum >= 10 ? 1 : 0;
+            l1 = l1!=null ? l1.next : l1;
+            l2 = l2!=null ? l2.next : l2;
+        }
+        if (carry > 0){
+            tail.next = new ListNode(carry);
+        }
+        return head;
     }
 
 
     /**
      * Description : 求链表所代表的值.如: (2 -> 4 -> 3) => 342
      */
-    private int getListNodeValue(ListNode l1){
+    private static int getListNodeValue(ListNode l1){
         int a = l1.val;
         int n = 0;
         ListNode curNode = l1.next;
@@ -68,7 +94,7 @@ public class Question2 {
     }
 
     /**
-     * Description : 获取证书num的第n位上的数
+     * Description : 获取整数num的第n位上的数
      */
     private int getEachBitInt(int num, int n){
         String str = String.valueOf(num);
@@ -85,20 +111,38 @@ public class Question2 {
     public static void main (String[] args){
 
 
-        ListNode ln1 = new ListNode(2);
-        ListNode ln2 = new ListNode(4);
-        ListNode ln3 = new ListNode(3);
-        ln1.next=ln2;
-        ln2.next=ln3;
+        ListNode ln1 = new ListNode(9);
+//        ListNode ln2 = new ListNode(9);
+//        ListNode ln3 = new ListNode(9);
+//        ln1.next=ln2;
+//        ln2.next=ln3;
 
-        ListNode ln11 = new ListNode(5);
-        ListNode ln22 = new ListNode(6);
-        ListNode ln33 = new ListNode(4);
+        ListNode ln11 = new ListNode(1);
+        ListNode ln22 = new ListNode(9);
+        ListNode ln33 = new ListNode(9);
+        ListNode ln44 = new ListNode(9);
+        ListNode ln55 = new ListNode(9);
+        ListNode ln66 = new ListNode(9);
+        ListNode ln77 = new ListNode(9);
+        ListNode ln88 = new ListNode(9);
+        ListNode ln99 = new ListNode(9);
+        ListNode ln10 = new ListNode(9);
         ln11.next=ln22;
         ln22.next=ln33;
+        ln33.next=ln44;
+        ln44.next=ln55;
+        ln55.next=ln66;
+        ln66.next=ln77;
+        ln77.next=ln88;
+        ln88.next=ln99;
+        ln99.next=ln10;
         Question2 q = new Question2();
         int a = q.getListNodeValue(ln1);
         int b = q.getListNodeValue(ln11);
-        System.out.println("方法一结果:"+q.addTwoNumbers1(ln1,ln11));
+        System.out.print("链表一：");ln1.print();
+        System.out.print("链表二：");ln11.print();
+        System.out.println(a + " + " + b + "=");
+        System.out.println("方法一结果:" + getListNodeValue(q.addTwoNumbers1(ln1,ln11)));
+
     }
 }

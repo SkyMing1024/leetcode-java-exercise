@@ -5,7 +5,7 @@ public class Sort {
     /**
      * Description : 冒泡排序
      */
-    public void bubbleSort(int[] arr, int n){
+    public static void bubbleSort(int[] arr, int n){
         for (int i = 0; i < n ; i++) {
             boolean flag = false;
             for (int j = 0; j < n-(i+1) ; j++) {
@@ -16,7 +16,7 @@ public class Sort {
                     flag = true;
                 }
             }
-            // 没有数据交换, 退出循环
+            // 没有数据交换（说明[0,n-(i+1)]这一段都是排序好的，不需要再排序）, 退出循环
             if (!flag){
                 break;
             }
@@ -26,7 +26,7 @@ public class Sort {
     /**
      * Description : 插入排序
      */
-    public void insertionSort(int[] arr, int n){
+    public static void insertionSort(int[] arr, int n){
         for (int i = 1; i < n; i++) {
             int val = arr[i];
             int j = i-1;
@@ -45,7 +45,7 @@ public class Sort {
     /**
      * Description : 选择排序
      */
-    public void selecttionSort(int[] arr, int n){
+    public static void selecttionSort(int[] arr, int n){
         for (int i = 0; i < n; i++) {
             int x = i;
             for (int j = i; j < n ; j++) {

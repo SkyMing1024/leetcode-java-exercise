@@ -40,14 +40,15 @@ public class Question1 {
      * 时间复杂度降低至 O(n)
      * 空间复杂度 O(n)
      */
-    public int[] towSum2(int[] sums, int target){
+    public int[] towSum2(int[] nums, int target){
         Map<Integer,Object> map = new HashMap<Integer,Object>();
-        for (int i = 0; i < sums.length; i++) {
-            if(map.containsValue(target - sums[i])){
-                return new int[]{i,i};
+        for (int i = 0; i < nums.length; i++) {
+            if(map.containsKey(target - nums[i])){
+                return new int[]{(int) map.get(target-nums[i]),i};
             }
+            map.put(nums[i],i);
         }
-        throw new IllegalArgumentException("No two sum solution");
+        return new int[0];
     }
 
 
@@ -57,6 +58,10 @@ public class Question1 {
 
     public static void main(String[] args){
         Question1 quertion = new Question1();
-        quertion.solution();
+        int[] a = quertion.towSum2(new int[]{2,7,11,15},22);
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+
+        }
     }
 }

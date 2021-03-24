@@ -2,12 +2,28 @@ package indi.sky.dataStructure;
 
 import java.util.LinkedList;
 
+/**
+ * 链表
+ */
 public class ListNode {
     public int val;
     public ListNode next;
 
     public ListNode(int val) {
         this.val = val;
+    }
+
+    public ListNode(int val, ListNode next){
+        this.val = val;
+        this.next = next;
+    }
+
+    public ListNode(int ...val) {
+        this.val = val[0];
+        ListNode temp = new ListNode();
+        for (int i = 0; i < val.length; i++) {
+            this.next.val = val[i];
+        }
     }
 
     /**
