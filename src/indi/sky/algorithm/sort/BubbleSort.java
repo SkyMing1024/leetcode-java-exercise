@@ -1,5 +1,7 @@
 package indi.sky.algorithm.sort;
 
+import indi.sky.util.CommonUtil;
+
 import java.util.Arrays;
 
 /**
@@ -15,6 +17,7 @@ public class BubbleSort {
                     arr[j] = arr[j+1];
                     arr[j+1] =temp;
                     flag = true;
+                    CommonUtil.printArrayInLine(arr);
                 }
             }
             // 没有数据交换, 退出循环
@@ -26,9 +29,9 @@ public class BubbleSort {
 
     public static void main(String[] args){
         BubbleSort b = new BubbleSort();
-        int[] arr = {5,1,3,2,4,6};
-        System.out.println(arr.toString());
+        int[] arr = {5,1,3,6,2,4};
+        CommonUtil.printArrayInLine(arr);
         b.bubbleSort(arr,arr.length);
-        System.out.println(arr);
+//        CommonUtil.printArrayInLine(arr);
     }
 }

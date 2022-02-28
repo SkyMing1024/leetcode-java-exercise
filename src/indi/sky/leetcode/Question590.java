@@ -1,6 +1,6 @@
 package indi.sky.leetcode;
 
-import indi.sky.util.Node;
+import indi.sky.dataStructure.Node;
 
 import java.util.ArrayList;
 import java.util.List;

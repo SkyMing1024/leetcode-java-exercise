@@ -10,16 +10,26 @@ package indi.sky.leetcode;
  */
 public class Question5 {
 
+
+    /**
+     * 方法一：
+     * 暴力循环，
+     *
+     * @param s
+     * @return
+     */
     public String longestPalindrome1(String s) {
         int n = s.length();
         if (n<=1){
             return s;
         }
+        // 记录选出来的最大长度
         int l = 0;
         int a = 0,b=0;
         for (int i = 0; i < n; i++) {
             for (int j = i+1; j < n; j++) {
                 if (isPalinromel(s,i,j)){
+                    //
                     if (j-i>l){
                         l = j-i;
                         a = i;

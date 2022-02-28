@@ -52,10 +52,6 @@ public class Question1 {
     }
 
 
-    public void solution(){
-        System.out.println("solution");
-    }
-
     public static void main(String[] args){
         Question1 quertion = new Question1();
         int[] a = quertion.towSum2(new int[]{2,7,11,15},22);

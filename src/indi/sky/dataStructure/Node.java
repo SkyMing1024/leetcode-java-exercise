@@ -1,4 +1,4 @@
-package indi.sky.util;
+package indi.sky.dataStructure;
 
 import java.util.List;
 

@@ -3,7 +3,7 @@ package indi.sky.dataStructure;
 import java.util.LinkedList;
 
 /**
- * 链表
+ * 链表节点
  */
 public class ListNode {
     public int val;
