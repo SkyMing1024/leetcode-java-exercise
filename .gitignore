@@ -3,3 +3,5 @@
 leetcode-java-execise.iml
 /.vscod
 .DS_Store
+target/
+*.class
