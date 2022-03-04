@@ -1,3 +1,4 @@
+package indi.sky.leetcode_vs;
 /*
  * @lc app=leetcode.cn id=6 lang=java
  *
