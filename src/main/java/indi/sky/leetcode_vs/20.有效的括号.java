@@ -75,7 +75,7 @@ import org.apache.commons.lang3.ArrayUtils;
 import java.util.Stack;
 
 // @lc code=start
-class Solution {
+class Solution20 {
     public boolean isValid(String s) {
         if (s.length()%2!=0){
             return false;
