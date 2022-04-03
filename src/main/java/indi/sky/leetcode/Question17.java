@@ -32,15 +32,13 @@ public class Question17 {
 
         if (strList.iterator().hasNext()){
             String[] strArray = strList.iterator().next();
-
+            System.out.println(strArray);
         }
 
         for (int i = 0; i < strList.size(); i++) {
             String[] ss = strList.get(i);
-            for (int j = 0; j < ss.length; j++) {
 
-
-            }
+            System.out.println(ss);
         }
         return list;
     }
