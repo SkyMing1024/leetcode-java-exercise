@@ -1,4 +1,4 @@
-/*
+package indi.sky.leetcode_vs;/*
  * @lc app=leetcode.cn id=105 lang=java
  *
  * [105] 从前序与中序遍历序列构造二叉树
@@ -49,6 +49,9 @@
  */
 
 // @lc code=start
+
+import indi.sky.dataStructure.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -64,9 +67,10 @@
  *     }
  * }
  */
-class Solution {
+class Solution105 {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
 
+        return new TreeNode();
     }
 }
 // @lc code=end

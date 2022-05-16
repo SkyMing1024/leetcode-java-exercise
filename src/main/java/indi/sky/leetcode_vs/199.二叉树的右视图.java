@@ -1,4 +1,4 @@
-/*
+package indi.sky.leetcode_vs;/*
  * @lc app=leetcode.cn id=199 lang=java
  *
  * [199] 二叉树的右视图
@@ -52,6 +52,11 @@
  */
 
 // @lc code=start
+
+import indi.sky.dataStructure.TreeNode;
+
+import java.util.List;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -67,9 +72,9 @@
  *     }
  * }
  */
-class Solution {
+class Solution199 {
     public List<Integer> rightSideView(TreeNode root) {
-
+    return null;
     }
 }
 // @lc code=end

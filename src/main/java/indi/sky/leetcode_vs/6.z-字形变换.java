@@ -6,7 +6,7 @@ package indi.sky.leetcode_vs;
  */
 
 // @lc code=start
-class Solution {
+class Solution6 {
     public String convert(String s, int numRows) {
         if(numRows == 1){
             return s;
@@ -52,7 +52,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution s = new Solution();
+        Solution6 s = new Solution6();
         String  res = s.convert("AB", 1);
         System.out.println(res);
     

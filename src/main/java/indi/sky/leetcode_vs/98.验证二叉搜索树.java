@@ -1,3 +1,7 @@
+package indi.sky.leetcode_vs;
+
+import indi.sky.dataStructure.TreeNode;
+
 import java.util.ArrayList;
 
 /*
@@ -69,12 +73,12 @@ import java.util.ArrayList;
  *     }
  * }
  */
-class Solution {
+class Solution98 {
     ArrayList<Integer> list = new ArrayList<>();
 
     public boolean isValidBST(TreeNode root) {
         if(root == null) return false;
-        order(root);
+
 
         for (int i = 0; i < list.size()-1; i++) {
             if(list.get(i+1)<=list.get(i)){

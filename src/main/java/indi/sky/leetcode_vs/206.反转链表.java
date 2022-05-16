@@ -57,6 +57,9 @@ package indi.sky.leetcode_vs;/*
  */
 
 // @lc code=start
+
+import indi.sky.dataStructure.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -67,7 +70,7 @@ package indi.sky.leetcode_vs;/*
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+class Solution206 {
 
     public ListNode reverseList(ListNode head) {
         if(head==null || head.next==null){
@@ -84,7 +87,6 @@ class Solution {
             cur = temp;
 
         }
-
         return pre;
 
     }
